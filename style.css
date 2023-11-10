@@ -1,4 +1,10 @@
+@font-face {
+    font-family: edu-tas;
+    src: url(Edu_TAS_Beginner/EduTASBeginner-VariableFont_wght.ttf);
+}
+
 *{
+    font-family: edu-tas;
     margin: 0;
     padding: 0;
 }
@@ -12,11 +18,15 @@
     display: grid;
     grid-area: 1/1/3/1;
     grid-template-rows: 1fr 4fr 2fr;
-    align-content: center;
-    justify-content: center;
     background-color: rgb(255, 187, 0);
     color: aliceblue;
+    padding: 10% 0 0 5%;
 }
+
+li{
+    justify-self: center;
+}
+
 ul{
     display: grid;
     list-style-type: none;
@@ -33,6 +43,8 @@ h3{
 }
 .logo-bottom{
     grid-area: 2/1/2/1;
+    display: flex;
+    gap: 5%;
 }
 
 .logo-top{
@@ -55,7 +67,6 @@ h3{
 
 ::placeholder, button{
     color: aliceblue;
-
 }
 
 .buttons{
@@ -93,7 +104,6 @@ h3{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-   
 }
 
 .current-heading{
@@ -116,4 +126,23 @@ h3{
     display: grid;
     grid-template-rows: 1fr 7fr 1fr 4fr;
     gap: 10px;
+}
+
+[alt="dog"], [alt="animal"], [alt="spiderman"], [alt="traffic-light"],
+[alt="page-layout"], [alt="house"], [alt="profile-pic"], [alt="message"],
+[alt="clock"], [alt="clipboard"], [alt="people"], [alt="gear"], [alt="support"],
+[alt="shield"], [alt="logo"]
+{
+    width: 12%;
+    margin-right: 5%;
+}
+
+.search{
+    width: 5%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+[alt="magnifying"]{
+   width: 75%;
 }
